@@ -1,0 +1,115 @@
+.faq {
+  min-height: 797px;
+  height: auto;
+  padding: 100px 16px 110px;
+  display: block;
+  max-width: 630px;
+  margin: auto;
+}
+.faq-head {
+  text-align: center;
+}
+.faq-head h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  font-size: 55px;
+  margin: 25px 0 8px;
+}
+.faq-head > p {
+  font-size: 18px;
+  color: #aaa;
+}
+.faq-list {
+  display: block;
+  margin-top: 64px;
+}
+.faq details {
+  margin-bottom: 15px;
+  padding: 0 20px;
+  background: linear-gradient(145deg, #171717, #101010);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  transition:
+    border-color 0.25s,
+    background 0.25s;
+}
+.faq details:hover {
+  border-color: rgba(255, 221, 0, 0.55);
+  background: #171717;
+}
+.faq summary {
+  min-height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  list-style: none;
+  text-transform: capitalize;
+}
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+.faq-chevron {
+  flex: 0 0 20px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+.faq details[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+.faq details p {
+  color: #bbb;
+  max-width: 520px;
+  padding: 0 0 24px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .faq {
+    min-height: 800px;
+    height: auto;
+    padding: 94px 25px 80px;
+    max-width: none;
+  }
+  .faq-head h2 {
+    font-size: 40px;
+    margin-top: 31px;
+  }
+  .faq-head > p {
+    font-size: 16px;
+  }
+  .faq-list {
+    margin-top: 82px;
+  }
+  .faq summary {
+    font-size: 16px;
+    min-height: 65px;
+  }
+}
+
+/* Anton display heading values from Framer. */
+.faq-head h2 {
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .faq-head h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 601px) {
+  .faq {
+    padding-bottom: 98px;
+  }
+}

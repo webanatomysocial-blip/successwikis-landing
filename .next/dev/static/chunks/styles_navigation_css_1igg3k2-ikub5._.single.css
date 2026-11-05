@@ -1,0 +1,76 @@
+/* [project]/styles/navigation.css [app-client] (css) */
+nav.site-nav {
+  z-index: 20;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  opacity: 1;
+  visibility: visible;
+  width: 303px;
+  height: 42px;
+  font: 600 14px/1 var(--font-mono);
+  background: #0a0a0ae6;
+  border: 1px solid #ffffff29;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  display: flex;
+  position: fixed;
+  top: 25px;
+  bottom: auto;
+  left: 50%;
+  overflow: hidden;
+  transform: translateX(-50%);
+  box-shadow: 0 6px 18px #0000003d;
+}
+
+nav.site-nav.site-nav > a {
+  white-space: nowrap;
+  letter-spacing: -.04em;
+  border-right: 1px solid #ffffff1f;
+  flex: 1 1 0;
+  place-items: center;
+  height: 100%;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  transition: background-color .2s, color .2s;
+  display: grid;
+}
+
+nav.site-nav.site-nav > a:last-child {
+  border-right: 0;
+}
+
+nav.site-nav.site-nav > a:hover, nav.site-nav.site-nav > a:focus-visible {
+  color: #fff;
+  background: #ffffff0d;
+  outline: 0;
+}
+
+nav.site-nav .nav-logo {
+  flex: 1.08 1 0;
+}
+
+nav.site-nav.site-nav img {
+  width: 78px;
+  height: auto;
+}
+
+@media (max-width: 560px) {
+  nav.site-nav {
+    left: 44px;
+    transform: none;
+  }
+
+  body:has(main > .hero) nav.site-nav.site-nav > a {
+    letter-spacing: -.04em;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+  }
+}
+
+/*# sourceMappingURL=styles_navigation_css_1igg3k2-ikub5._.single.css.map*/

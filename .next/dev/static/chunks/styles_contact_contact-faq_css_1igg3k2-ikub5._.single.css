@@ -1,0 +1,131 @@
+/* [project]/styles/contact/contact-faq.css [app-client] (css) */
+.faq {
+  max-width: 630px;
+  height: auto;
+  min-height: 797px;
+  margin: auto;
+  padding: 100px 16px 110px;
+  display: block;
+}
+
+.faq-head {
+  text-align: center;
+}
+
+.faq-head h2 {
+  font-family: var(--font-display);
+  letter-spacing: -.015em;
+  margin: 25px 0 8px;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.faq-head > p {
+  color: #aaa;
+  font-size: 18px;
+}
+
+.faq-list {
+  margin-top: 64px;
+  display: block;
+}
+
+.faq details {
+  background: linear-gradient(145deg, #171717, #101010);
+  border: 1px solid #ffffff14;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  transition: border-color .25s, background .25s;
+  overflow: hidden;
+}
+
+.faq details:hover {
+  background: #171717;
+  border-color: #ffdd008c;
+}
+
+.faq summary {
+  cursor: pointer;
+  text-transform: capitalize;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  min-height: 65px;
+  font-size: 16px;
+  list-style: none;
+  display: flex;
+}
+
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-chevron {
+  color: #fff;
+  flex: 0 0 20px;
+  transition: transform .3s;
+}
+
+.faq details[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+.faq details p {
+  color: #bbb;
+  max-width: 520px;
+  padding: 0 0 24px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .faq {
+    max-width: none;
+    height: auto;
+    min-height: 800px;
+    padding: 94px 25px 80px;
+  }
+
+  .faq-head h2 {
+    margin-top: 31px;
+    font-size: 40px;
+  }
+
+  .faq-head > p {
+    font-size: 16px;
+  }
+
+  .faq-list {
+    margin-top: 82px;
+  }
+
+  .faq summary {
+    min-height: 65px;
+    font-size: 16px;
+  }
+}
+
+.faq-head h2 {
+  letter-spacing: normal;
+  text-transform: uppercase;
+  margin-top: 16px;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+  .faq-head h2 {
+    margin-top: 16px;
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 601px) {
+  .faq {
+    padding-bottom: 98px;
+  }
+}
+
+/*# sourceMappingURL=styles_contact_contact-faq_css_1igg3k2-ikub5._.single.css.map*/

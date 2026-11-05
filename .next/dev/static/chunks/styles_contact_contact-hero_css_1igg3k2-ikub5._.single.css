@@ -1,0 +1,145 @@
+/* [project]/styles/contact/contact-hero.css [app-client] (css) */
+.contact-hero {
+  border-bottom: 1px solid var(--color-line);
+  height: 1118px;
+  padding: 144px var(--gutter);
+  grid-template-columns: 430px 566px;
+  justify-content: center;
+  gap: 104px;
+  display: grid;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-intro {
+  z-index: 2;
+  position: relative;
+}
+
+.contact-intro h1 {
+  font-family: var(--font-display);
+  letter-spacing: -.015em;
+  margin: 23px 0 25px;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 1.02;
+}
+
+.contact-intro video {
+  object-fit: cover;
+  width: 340px;
+  height: 290px;
+  margin: 0 auto;
+  display: block;
+}
+
+.contact-meta {
+  font: 18px var(--font-body);
+  color: #ffffffa6;
+  justify-content: space-between;
+  max-width: 220px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.contact-intro small {
+  color: #ffffffa6;
+  align-items: center;
+  gap: 9px;
+  margin-top: 50px;
+  display: flex;
+}
+
+.contact-intro small i {
+  background: var(--color-accent);
+  width: 8px;
+  height: 8px;
+}
+
+.step {
+  background: linear-gradient(135deg, #fffceb, #fd0);
+  position: absolute;
+}
+
+.step-top {
+  clip-path: polygon(28% 0, 100% 0, 100% 100%, 83% 100%, 83% 55%, 42% 55%, 42% 33%, 28% 33%);
+  width: 400px;
+  height: 262px;
+  top: 0;
+  right: -1px;
+}
+
+.step-bottom {
+  clip-path: polygon(0 40%, 20% 40%, 20% 0, 61% 0, 61% 68%, 100% 68%, 100% 100%, 0 100%);
+  width: 450px;
+  height: 270px;
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 900px) {
+  .contact-hero {
+    grid-template-columns: 1fr;
+    height: 1791px;
+    padding: 100px 16px 55px;
+  }
+
+  .contact-intro {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .step-bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-hero {
+    display: block;
+  }
+
+  .step-top {
+    width: 126px;
+    height: 62px;
+  }
+
+  .contact-intro h1 {
+    margin: 35px 0;
+    font-size: 40px;
+  }
+
+  .contact-intro video {
+    object-fit: cover;
+    width: 100%;
+    height: 485px;
+  }
+
+  .contact-meta {
+    max-width: none;
+    margin-top: 10px;
+    padding-right: 85px;
+  }
+
+  .contact-intro small {
+    margin-top: 34px;
+  }
+}
+
+.contact-intro h1 {
+  letter-spacing: normal;
+  margin: 14px 0 25px;
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+  .contact-intro h1 {
+    margin: 30px 0 35px;
+    font-size: 35px;
+    line-height: 1.2;
+  }
+}
+
+/*# sourceMappingURL=styles_contact_contact-hero_css_1igg3k2-ikub5._.single.css.map*/

@@ -1,0 +1,4 @@
+/* Contact page entry styles. Component rules live in styles/contact/. */
+.contact-page {
+  background: var(--color-bg);
+}

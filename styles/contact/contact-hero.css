@@ -1,0 +1,142 @@
+.contact-hero {
+  height: 1118px;
+  border-bottom: 1px solid var(--color-line);
+  display: grid;
+  grid-template-columns: 430px 566px;
+  justify-content: center;
+  gap: 104px;
+  padding: 144px var(--gutter);
+  position: relative;
+  overflow: hidden;
+}
+.contact-intro {
+  position: relative;
+  z-index: 2;
+}
+.contact-intro h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.015em;
+  font-size: 55px;
+  margin: 23px 0 25px;
+}
+.contact-intro video {
+  display: block;
+  width: 340px;
+  height: 290px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.contact-meta {
+  font: 18px var(--font-body);
+  color: rgba(255, 255, 255, 0.65);
+  display: flex;
+  justify-content: space-between;
+  max-width: 220px;
+  margin-top: 10px;
+}
+.contact-intro small {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-top: 50px;
+}
+.contact-intro small i {
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent);
+}
+.step {
+  position: absolute;
+  background: linear-gradient(135deg, #fffceb, #ffdd00);
+}
+.step-top {
+  right: -1px;
+  top: 0;
+  width: 400px;
+  height: 262px;
+  clip-path: polygon(
+    28% 0,
+    100% 0,
+    100% 100%,
+    83% 100%,
+    83% 55%,
+    42% 55%,
+    42% 33%,
+    28% 33%
+  );
+}
+.step-bottom {
+  left: 0;
+  bottom: 0;
+  width: 450px;
+  height: 270px;
+  clip-path: polygon(
+    0 40%,
+    20% 40%,
+    20% 0,
+    61% 0,
+    61% 68%,
+    100% 68%,
+    100% 100%,
+    0 100%
+  );
+}
+@media (max-width: 900px) {
+  .contact-hero {
+    grid-template-columns: 1fr;
+    height: 1791px;
+    padding: 100px 16px 55px;
+  }
+  .contact-intro {
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+  }
+  .step-bottom {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .contact-hero {
+    display: block;
+  }
+  .step-top {
+    width: 126px;
+    height: 62px;
+  }
+  .contact-intro h1 {
+    font-size: 40px;
+    margin: 35px 0;
+  }
+  .contact-intro video {
+    width: 100%;
+    height: 485px;
+    object-fit: cover;
+  }
+  .contact-meta {
+    max-width: none;
+    padding-right: 85px;
+    margin-top: 10px;
+  }
+  .contact-intro small {
+    margin-top: 34px;
+  }
+}
+
+/* Live Framer type scale. */
+.contact-intro h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: normal;
+  margin: 14px 0 25px;
+}
+@media (max-width: 600px) {
+  .contact-intro h1 {
+    font-size: 35px;
+    line-height: 1.2;
+    margin: 30px 0 35px;
+  }
+}

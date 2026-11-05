@@ -1,0 +1,102 @@
+/* [project]/styles/footer.css [app-client] (css) */
+footer.event-footer.event-footer {
+  background: #020003;
+  overflow: hidden;
+}
+
+footer.event-footer.event-footer .footer-image {
+  inset: 0;
+}
+
+footer.event-footer.event-footer .footer-image img {
+  object-fit: cover;
+  object-position: center;
+}
+
+footer.event-footer.event-footer .footer-image:after {
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(90deg, #00000057 0%, #0000000d 58%, #0000002e 100%), linear-gradient(#020003 0%, #02000373 13%, #0003 48%, #0000008a 78%, #020003 100%);
+  position: absolute;
+  inset: 0;
+}
+
+footer.event-footer.event-footer .footer-content, footer.event-footer.event-footer .footer-bottom {
+  z-index: 2;
+  position: relative;
+}
+
+footer.event-footer.event-footer .footer-content h2 {
+  text-shadow: 0 2px 18px #000000b3;
+}
+
+footer.event-footer.event-footer .event-date {
+  text-shadow: 0 2px 12px #000000d9;
+  gap: 20px;
+}
+
+footer.event-footer.event-footer .event-date > div:first-child {
+  text-align: right;
+  align-items: flex-end;
+}
+
+footer.event-footer.event-footer .event-date > div:first-child > b {
+  letter-spacing: -.04em;
+  font-weight: 600;
+}
+
+@media (min-width: 901px) {
+  footer.event-footer.event-footer .footer-content {
+    padding: 164px 14% 45px;
+  }
+
+  footer.event-footer.event-footer .footer-content .cta {
+    top: 320px;
+    left: 14%;
+  }
+
+  footer.event-footer.event-footer .event-date {
+    top: 190px;
+    right: 14%;
+  }
+
+  footer.event-footer.event-footer .footer-bottom {
+    padding-left: 14%;
+    padding-right: 14%;
+  }
+}
+
+@media (max-width: 560px) {
+  footer.event-footer.event-footer .footer-image {
+    height: 416px;
+  }
+
+  footer.event-footer.event-footer .footer-image img {
+    object-position: 55% center;
+  }
+
+  footer.event-footer.event-footer .footer-image:after {
+    background: linear-gradient(#020003 0%, #0200039e 13%, #0000006b 48%, #000000b3 82%, #020003 100%);
+  }
+}
+
+@media (min-width: 901px) {
+  footer.event-footer.event-footer .footer-content h2 {
+    letter-spacing: -.04em;
+    max-width: 600px;
+    font-size: 42px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 560px) {
+  footer.event-footer.event-footer .footer-content h2 {
+    letter-spacing: -.04em;
+    font-size: 32px;
+    line-height: 1.2;
+    left: 25px;
+    right: 25px;
+  }
+}
+
+/*# sourceMappingURL=styles_footer_css_1igg3k2-ikub5._.single.css.map*/

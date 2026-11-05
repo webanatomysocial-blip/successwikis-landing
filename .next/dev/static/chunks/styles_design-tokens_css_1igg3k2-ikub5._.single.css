@@ -1,0 +1,22 @@
+/* [project]/styles/design-tokens.css [app-client] (css) */
+:root {
+  --color-bg: #020003;
+  --color-surface: #0b0b0b;
+  --color-paper: #fff;
+  --color-ink: #050505;
+  --color-accent: #fd0;
+  --color-muted: #ffffff9e;
+  --color-line: #ffffff2e;
+  --font-display: "Anton", "Arial Narrow", sans-serif;
+  --font-body: "Geist", "Inter", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  --container: 1100px;
+  --gutter: clamp(18px, 3vw, 48px);
+  --radius: 10px;
+  --ease: cubic-bezier(.22, 1, .36, 1);
+  --duration: .35s;
+  --layer-content: 2;
+  --layer-nav: 20;
+}
+
+/*# sourceMappingURL=styles_design-tokens_css_1igg3k2-ikub5._.single.css.map*/

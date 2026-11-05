@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/contact.css"],"sourcesContent":["/* Contact page entry styles. Component rules live in styles/contact/. */\n.contact-page {\n  background: var(--color-bg);\n}\n"],"names":[],"mappings":"AACA"}}]
+}

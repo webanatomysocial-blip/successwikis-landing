@@ -1,0 +1,86 @@
+.contact-countdown {
+  height: auto;
+  padding: 38px 15.1% 50px;
+  background: #020003;
+  overflow: hidden;
+}
+.contact-countdown-copy {
+  display: grid;
+  grid-template-columns: 1.35fr 1.55fr 1fr;
+  gap: 42px;
+  align-items: start;
+}
+.contact-countdown h2 {
+  font-size: 16px;
+  line-height: 1.45;
+  letter-spacing: 0;
+  color: #ddd;
+}
+.contact-countdown h2 em {
+  color: inherit;
+  font-style: normal;
+}
+.contact-countdown .cta {
+  min-width: 250px;
+  padding: 13px 20px;
+}
+.contact-page .contact-countdown .countdown--large {
+  position: static;
+  margin: 36px 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.contact-page .contact-countdown .countdown--large .countdown-unit {
+  gap: 24px;
+}
+.contact-page .contact-countdown .countdown--large strong {
+  font-family: var(--font-display);
+  font-size: 180px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  color: #fff;
+}
+.contact-page .contact-countdown .countdown--large b {
+  font-family: var(--font-display);
+  font-size: 180px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: rgba(255, 221, 0, 0.55);
+}
+.contact-page .contact-countdown .countdown--large span {
+  font-size: 11px;
+}
+@media (max-width: 900px) {
+  .contact-countdown {
+    height: 317px;
+    padding: 35px 18px;
+  }
+  .contact-countdown-copy {
+    grid-template-columns: 1fr;
+  }
+  .contact-countdown h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-countdown-copy h2,
+  .contact-countdown-copy .cta {
+    display: none;
+  }
+  .contact-page .contact-countdown .countdown--large {
+    margin-top: 72px;
+    gap: 5px;
+  }
+  .contact-page .contact-countdown .countdown--large .countdown-unit {
+    gap: 5px;
+  }
+  .contact-page .contact-countdown .countdown--large strong,
+  .contact-page .contact-countdown .countdown--large b {
+    font-size: 42px;
+  }
+  .contact-page .contact-countdown .countdown--large span {
+    font-size: 8px;
+  }
+}

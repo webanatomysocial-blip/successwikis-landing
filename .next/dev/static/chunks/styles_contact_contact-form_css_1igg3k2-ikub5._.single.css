@@ -1,0 +1,195 @@
+/* [project]/styles/contact/contact-form.css [app-client] (css) */
+.contact-form-card {
+  z-index: 2;
+  color: #111;
+  background: #fff;
+  width: 566px;
+  height: 830px;
+  padding: 40px;
+  position: relative;
+}
+
+.contact-form-card > p {
+  max-width: 470px;
+  margin: 18px 0 42px;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.contact-form-card form {
+  gap: 29px;
+  display: grid;
+}
+
+.contact-form-card label {
+  font: 500 12px var(--font-mono);
+  gap: 10px;
+  display: grid;
+}
+
+.contact-form-card input, .contact-form-card select {
+  font: 16px var(--font-body);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #d6d6d6;
+  border-radius: 0;
+  outline: none;
+  padding: 10px 0 14px;
+}
+
+.contact-form-card input:focus, .contact-form-card select:focus {
+  border-color: #111;
+}
+
+.contact-form-card input::placeholder {
+  color: #bbb;
+}
+
+.form-disclaimer {
+  font: 11px/1.5 var(--font-mono);
+  text-transform: uppercase;
+  margin-top: 8px;
+}
+
+.contact-form-card button {
+  height: 56px;
+  font: 600 13px var(--font-mono);
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #111;
+  grid-template-columns: 58px 1fr;
+  margin-top: 24px;
+  padding: 0;
+  transition: background .25s, color .25s;
+  display: grid;
+}
+
+.contact-form-card button span {
+  border-right: 1px solid #111;
+  place-items: center;
+  height: 100%;
+  display: grid;
+}
+
+.contact-form-card button span svg {
+  display: block;
+}
+
+.contact-form-card button:not(:disabled):hover, .contact-form-card button:not(:disabled):focus-visible {
+  background: var(--color-accent);
+  color: #000;
+  outline: 0;
+}
+
+.contact-form-card small {
+  color: #222;
+  font: 14px/1.4 var(--font-body);
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.contact-form-card small i {
+  background: var(--color-accent);
+  flex: 0 0 8px;
+  width: 8px;
+  height: 8px;
+}
+
+.form-message {
+  font: 12px var(--font-mono);
+}
+
+.form-message.success {
+  color: #16803c;
+}
+
+.form-message.error {
+  color: #b32121;
+}
+
+@media (max-width: 600px) {
+  .contact-form-card {
+    width: 100%;
+    height: 796px;
+    margin: 5px auto 0;
+    padding: 40px 28px;
+    display: block;
+  }
+
+  .contact-form-card h2 {
+    font-size: 34px;
+  }
+
+  .contact-form-card > p {
+    margin-bottom: 34px;
+  }
+
+  .contact-form-card form {
+    gap: 21px;
+  }
+
+  .contact-form-card .form-disclaimer {
+    margin-top: 5px;
+  }
+
+  .contact-form-card button {
+    margin-top: 3px;
+  }
+
+  .contact-form-card small {
+    margin-top: 6px;
+    font-size: 13px;
+  }
+}
+
+.contact-form-card h2 {
+  font: 500 36px/1.1 var(--font-body);
+  letter-spacing: -.03em;
+}
+
+.contact-form-card label {
+  font: 500 14px/1.4 var(--font-mono);
+  letter-spacing: -.04em;
+  text-transform: uppercase;
+}
+
+.contact-form-card button {
+  font: 700 16px/1.4 var(--font-mono);
+  letter-spacing: -.03em;
+}
+
+@media (max-width: 600px) {
+  .contact-form-card {
+    padding: 24px;
+  }
+
+  .contact-form-card h2 {
+    font-size: 36px;
+  }
+}
+
+.contact-form-card button {
+  margin-top: -2px;
+}
+
+.contact-form-card small {
+  margin-top: 27px;
+}
+
+@media (max-width: 600px) {
+  .contact-form-card {
+    margin-top: 9px;
+  }
+
+  .contact-form-card button {
+    margin-top: 28px;
+  }
+
+  .contact-form-card small {
+    margin-top: 35px;
+  }
+}
+
+/*# sourceMappingURL=styles_contact_contact-form_css_1igg3k2-ikub5._.single.css.map*/

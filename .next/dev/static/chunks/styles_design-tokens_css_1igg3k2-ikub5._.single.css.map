@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/design-tokens.css"],"sourcesContent":[":root {\n  --color-bg: #020003;\n  --color-surface: #0b0b0b;\n  --color-paper: #fff;\n  --color-ink: #050505;\n  --color-accent: #ffdd00;\n  --color-muted: rgba(255, 255, 255, 0.62);\n  --color-line: rgba(255, 255, 255, 0.18);\n  --font-display: \"Anton\", \"Arial Narrow\", sans-serif;\n  --font-body: \"Geist\", \"Inter\", sans-serif;\n  --font-mono: \"Geist Mono\", monospace;\n  --container: 1100px;\n  --gutter: clamp(18px, 3vw, 48px);\n  --radius: 10px;\n  --ease: cubic-bezier(0.22, 1, 0.36, 1);\n  --duration: 0.35s;\n  --layer-content: 2;\n  --layer-nav: 20;\n}\n"],"names":[],"mappings":"AAAA"}}]
+}
